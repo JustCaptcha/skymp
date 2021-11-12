@@ -1,17 +1,17 @@
 import React from 'react';
-import { IDefaultUIComponentProps } from '../../interfaces';
+import { DefaultUIComponentProps } from '../../interfaces';
 import './styles.scss';
 
-interface IFrameButtonProps extends IDefaultUIComponentProps {
+interface FrameButtonProps extends DefaultUIComponentProps {
     variant: string;
 }
 
-interface IButtonItemProps extends IDefaultUIComponentProps {
+interface ButtonItemProps extends DefaultUIComponentProps {
     name: string;
     variant?: string;
 }
 
-const ButtonItem = (props: IButtonItemProps) => {
+const ButtonItem = (props: ButtonItemProps) => {
     const height = props.height != undefined ? props.height : 64;
     const width = props.width != undefined ? props.width : 64;
     const url = props.url || require(`./img/${props.name}.svg`).default;
@@ -49,7 +49,7 @@ const ButtonItem = (props: IButtonItemProps) => {
     )
 }
 
-const FrameButton = (props: IFrameButtonProps) => {
+const FrameButton = (props: FrameButtonProps) => {
     let fwidth = props.width || 384;
     let fheight = props.height || 64;
     let isDisabled = props.disabled != undefined ? props.disabled : true;

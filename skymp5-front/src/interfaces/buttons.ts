@@ -1,11 +1,11 @@
-export interface ISkyrimHintProps {
+export interface SkyrimHintProps {
     isOpened: boolean;
     active: string;
     text: string;
     left: boolean;
 } 
 
-export interface IDefaultUIComponentProps {
+export interface DefaultUIComponentProps {
     name: string;
     width?: number;
     height?: number;

@@ -1,9 +1,9 @@
 import React from 'react';
-import { ISkyrimHintProps } from '../../interfaces/buttons';
+import { SkyrimHintProps } from '../../interfaces/buttons';
 import './SkyrimHint.scss';
 
 export const SkyrimHint = (
-  { isOpened = false, text = '', active, left }: ISkyrimHintProps
+  { isOpened = false, text = '', active, left }: SkyrimHintProps
 ) => {
   return (
     <div
